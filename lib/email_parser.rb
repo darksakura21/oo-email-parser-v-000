@@ -11,10 +11,7 @@ class EmailParser
   end
 
   def parse
-    email_list = @emails.split(', ').uniq
-    email_list_2 = @emails.split.(' ').uniq
-    email_list_2.concat(email_list)
-    email_list
+    @emails.split(/[\s,]+/).uniq
   end
 
 end
