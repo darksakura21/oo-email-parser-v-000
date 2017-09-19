@@ -17,7 +17,10 @@ class EmailParser
 
     with_commas.each do |email|
       email.split(',').delete(',').join
+      email
     end
+      full_email_list = 
+    
     end
   end
 
