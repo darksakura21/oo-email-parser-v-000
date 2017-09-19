@@ -11,7 +11,7 @@ class EmailParser
   end
 
   def parse
-    email_list = @emails.split(',').uniq
+    email_list = @emails.split(',').strip.uniq
     end
 
 end
