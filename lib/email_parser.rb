@@ -13,14 +13,14 @@ class EmailParser
   def parse
     email_list = @emails.split(' ').uniq
     with_commas = email_list.detect {|email| email.include?(',')}
-    with_out_commas = email_list.select {|email| email.include?(',')== false}
+    without_commas = email_list.select {|email| email.include?(',')== false}
 
     with_commas.each do |email|
       email.split(',').delete(',').join
       email
     end
-      full_email_list = 
-    
+      full_email_list = with_commas.concat(without_commas).uniq!
+
     end
   end
 
