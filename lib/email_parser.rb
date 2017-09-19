@@ -13,8 +13,8 @@ class EmailParser
   def parse
     email_list = @emails.split(', ').uniq
 
-    email_list.select(' ').split(' ')
-    email_list
+    email_list.select(' ')
+    
   end
 
 end
