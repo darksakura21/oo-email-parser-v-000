@@ -14,6 +14,7 @@ class EmailParser
     email_list = @emails.split(', ').uniq
 
     email_list.detect(' ').split(' ')
+    unique
   end
 
 end
