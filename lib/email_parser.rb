@@ -12,12 +12,7 @@ class EmailParser
 
   def parse
     email_list = @emails.split(', ').uniq
-
-    email_list.each do |email|
-      email.split(' ')
-    end
-
-    email_list
+    email_list_2 = @emails.split.(' ').uniq
 
   end
 
