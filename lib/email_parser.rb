@@ -21,8 +21,6 @@ class EmailParser
     end
       full_email_list = with_commas.concat(without_commas).uniq!
       full_email_list
-
     end
-  end
 
 end
