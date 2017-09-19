@@ -15,7 +15,7 @@ class EmailParser
     with_commas = email_list.detect {|email| email.include?(',')}
     without_commas = email_list.select {|email| email.include?(',')== false}
 
-    with_commas.each do |email|
+    with_commas.each |email|
       email.split(',').delete(',').join
       email
     end
