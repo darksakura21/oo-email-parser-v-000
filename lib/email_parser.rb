@@ -14,7 +14,7 @@ class EmailParser
     email_list = @emails.split(', ').uniq
 
     email_list.each do |email|
-      email_list  << email.split(' ')
+      email.split(' ')
     end
 
     email_list
