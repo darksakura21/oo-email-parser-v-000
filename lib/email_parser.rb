@@ -13,7 +13,7 @@ class EmailParser
   def parse
     email_list = @emails.split(' ').uniq
     email_list.select {|email| email.include?(',')== false}
-      
+
     end
   end
 
